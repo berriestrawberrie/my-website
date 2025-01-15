@@ -2,7 +2,7 @@
 :root{
     --bgcolor: #ffc7cd;
     --maincolor: #fff;
-    --lightaccent: #ffeaef;
+    --lightaccent: #ffdee2;
     --darkaccent: #ff7887;
 }
 
@@ -36,12 +36,21 @@ h3{
     margin-top: -20px;
     color: var(--darkaccent);
 }
+
+h2{
+    background-color: var(--lightaccent);
+    font-size: 18px;
+    /*OVERRIDE THE GLOBAL ALIGNMENT*/
+    text-align: left !important;
+    padding-left: 10px;
+    color: grey;
+}
 p{
     /*OVERRIDE THE GLOBAL ALIGNMENT*/
     text-align:left !important;
     padding: 15px;
-    font-size: 
-
+    font-size: 14px;
+    margin-top: -10px;
 }
 
 #avatar{
@@ -55,8 +64,8 @@ p{
 /*NAV BUTTONS FORMATTING */
 #icons {
     position: absolute;
-    left: 80px;
-    width: 350px;
+    left: 0px;
+    width: 100%;
     margin-top: -20px;
 }
 #icons button{
@@ -72,4 +81,55 @@ p{
     border-radius: 8px 8px 0 0;
     background-color: var(--maincolor);
     color: var(--darkaccent);
+}
+
+table {
+    border-radius: 3px;
+    width: 90%;
+    margin: 20px;
+}
+th{
+    background-color: var(--darkaccent);
+    color: var(--maincolor);
+    font-weight:bold;
+}
+
+ul{
+    justify-content:left;
+
+    
+}
+li{
+    text-align:left;
+    list-style-type: none;
+
+}
+/*ADD HEARTS INSTEAD OF DOTS FOR BULLETS */
+li:before{
+    content: "❤";
+    padding-right: 5px;
+    font-size: 13px;
+}
+
+/*DESIGN OF THE WORK TILES*/
+
+.workfolder{
+
+    margin: 20px;
+}
+.workheader{
+    border: 2px solid black;
+    border-bottom: none;
+    width: 40%;
+    border-radius: 8px 8px 0 0;
+    background-color: var(--darkaccent);
+}
+.workbody{
+    border: 2px solid black;
+    border-radius: 0 8px 8px 8px;
+    background-color: var(--darkaccent);
+}
+#work-p{
+    background-color: #fff;
+    margin: 15px;
 }
